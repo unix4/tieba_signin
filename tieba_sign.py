@@ -4,13 +4,12 @@ Tieba 自动签到脚本（Telegram 推送版）
 ================================================
 一次性配置区（最简用法）
 ------------------------
-只需在本文件顶部填入 **三项信息** 即可运行；如不想把敏感信息写在文件里，也可改用环境变量覆盖。
-
-* `BDUSS_FALLBACK` —— 必填，支持单账号或多个 BDUSS，用英文逗号 `,` 分隔。
+获取百度账户 BDUSS、Telegram BOT_TOKEN 和 CHAT_ID
+* `BDUSS_FALLBACK` —— 必填，支持单账号或多个 BDUSS，用英文逗号 `,` 分隔。（f12获取）
 * `BOT_TOKEN` —— Telegram Bot Token，可在 [@BotFather](https://t.me/BotFather) 获取。
 * `CHAT_ID` —— Telegram Chat ID，可通过 `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates` 或 `@userinfobot` 查询。
 
-> **覆写逻辑**：脚本会先读取环境变量 `TIEBA_BDUSS`、`TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID`；如未设置，则使用本区填写的值。
+> **覆写逻辑**：脚本会先读取环境变量 `TIEBA_BDUSS`、`TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID`；
 """
 
 import os
